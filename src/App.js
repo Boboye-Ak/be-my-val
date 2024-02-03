@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import useSound from "use-sound"
 import './App.css';
 import NoButton from './components/NoButton/NoButton';
@@ -23,7 +23,7 @@ function App() {
             <NoButton />
           </div> : <>
             <div className='choice'>
-              <Accepted setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop}/>
+              <Accepted setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
             </div>
           </>}
         </> : <div>Small screen</div>
