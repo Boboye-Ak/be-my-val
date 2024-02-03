@@ -1,0 +1,8 @@
+.no-button {
+    background-color: #dcdcdc; /* Light gray for "No" button */
+    color: #555;
+}
+
+.no-button:hover {
+    background-color: #bfbfbf; /* Darker gray on hover */
+}

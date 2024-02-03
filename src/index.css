@@ -5,9 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("../public/love-background-1.jpg");
+  background-size: cover;
+  /* This will make the background image cover the entire screen */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.yes-button,
+.no-button {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
 }

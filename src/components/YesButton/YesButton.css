@@ -1,0 +1,11 @@
+.yes-button {
+    background-color: #ff6b6b; /* Red for "Yes" button */
+    color: #fff;
+}
+
+
+
+.yes-button:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
