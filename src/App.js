@@ -4,14 +4,14 @@ import './App.css';
 import NoButton from './components/NoButton/NoButton';
 import YesButton from './components/YesButton/YesButton';
 import Accepted from './components/Accepted/Accepted';
-import theBookOfLove from "./The-Book-of-Love.mp3"
+import marriedLifeClip from "./married-life-clipped.mp3"
 import SmallScreen from './components/SmallScreen/SmallScreen';
 
 import { motion } from "framer-motion"
 
 function App() {
   const [isAccepted, setIsAccepted] = useState(false)
-  const [playSound, { stop }] = useSound(theBookOfLove);
+  const [playSound, { stop }] = useSound(marriedLifeClip);
 
 
 
