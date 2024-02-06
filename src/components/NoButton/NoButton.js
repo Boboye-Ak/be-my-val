@@ -13,10 +13,12 @@ const NoButton = () => {
         setIsMoved(true)
         const windowWidth = window.innerWidth
         const windowHeight = window.innerHeight
-        setXPosition(getRandomNumber(-windowWidth / 2+20, windowWidth / 2-20))
-        setYPosition(getRandomNumber(-windowHeight / 2+20, windowHeight / 2-20))
+        setXPosition(getRandomNumber(-windowWidth / 2 + 100, windowWidth / 2 - 100))
+        setYPosition(getRandomNumber(-windowHeight / 2 + 100, windowHeight / 2 - 100))
     }
     return <div className="no-button" style={isMoved ? { top: yPosition, left: xPosition, } : {}} onMouseEnter={() => {
+        relocate()
+    }} onClick={() => {
         relocate()
     }}>
         No

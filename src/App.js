@@ -19,7 +19,7 @@ function App() {
   return (
     <motion.div className="app" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {
-        (window.innerWidth > 768) ? <>
+         <>
           <h1 className='header'>WILL YOU BE MY VALENTINE? &#129402;</h1>
           {!isAccepted ? <div className='choice'>
             <YesButton setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
@@ -29,7 +29,7 @@ function App() {
               <Accepted setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
             </div>
           </>}
-        </> : <SmallScreen />
+        </> 
       }
     </motion.div>
   );

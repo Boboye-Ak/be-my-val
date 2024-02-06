@@ -16,6 +16,7 @@
 .accepted .text {
     font-size: 5em;
     font-weight: 400;
+    text-align: center;
 }
 
 .accepted .close-icon {
@@ -29,5 +30,13 @@
 
 .accepted .close-icon:hover {
     color: red;
+}
 
+
+@media only screen and (max-width: 768px) {
+    /* Your CSS styles for phone screens go here */
+
+    .accepted .text {
+        font-size: 3em;
+    }
 }
