@@ -5,7 +5,6 @@ import NoButton from './components/NoButton/NoButton';
 import YesButton from './components/YesButton/YesButton';
 import Accepted from './components/Accepted/Accepted';
 import marriedLifeClip from "./married-life-clipped.mp3"
-import SmallScreen from './components/SmallScreen/SmallScreen';
 
 import { motion } from "framer-motion"
 
@@ -19,7 +18,7 @@ function App() {
   return (
     <motion.div className="app" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {
-         <>
+        <>
           <h1 className='header'>WILL YOU BE MY VALENTINE? &#129402;</h1>
           {!isAccepted ? <div className='choice'>
             <YesButton setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
@@ -29,7 +28,7 @@ function App() {
               <Accepted setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
             </div>
           </>}
-        </> 
+        </>
       }
     </motion.div>
   );
