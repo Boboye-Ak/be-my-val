@@ -15,7 +15,7 @@ function App() {
     <motion.div className="app" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {
         <>
-          <h1 className='header'>WILL YOU BE MY VALENTINE? &#129402;</h1>
+          <h1 className='header'>WILL YOU BE MY <s>INSIGNIFICANT OTHER</s> GIRLFRIEND? &#129402;</h1>
           {!isAccepted ? <div className='choice'>
             <YesButton setIsAccepted={setIsAccepted} playSound={playSound} stopSound={stop} />
             <NoButton />

@@ -9,7 +9,7 @@ const Accepted = ({ setIsAccepted, playSound, stopSound }) => {
             stopSound()
         }}><Icon icon="mi:close" /></div>
         <div className="text"> <Typewriter onInit={(typewriter) => {
-            typewriter.typeString("Good Choice. God saved you.").pauseFor(3000).deleteAll().typeString("JK. Thank you for saying yes. <3 :)").start()
+            typewriter.typeString("Thank You for saying Yes").pauseFor(3000).deleteAll().typeString("I Love You My Pinky. <3 :)").start()
         }} /></div>
 
     </motion.div>
